@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class EstimateActivity extends AppCompatActivity {
     private TextView textViewKalanHak, textViewYardim;
     private EditText editTextGirdi;
-    private Button buttonTahmin;
+    private Button buttonTahminnn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,9 @@ public class EstimateActivity extends AppCompatActivity {
 
         editTextGirdi = findViewById(R.id.editTextGirdi);
 
-        buttonTahmin = findViewById(R.id.buttonTahmin);
+        buttonTahminnn = findViewById(R.id.buttonTahmin);
 
-        buttonTahmin.setOnClickListener(new View.OnClickListener() {
+        buttonTahminnn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(EstimateActivity.this, ResultActivity.class));

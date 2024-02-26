@@ -25,8 +25,8 @@ public class ResultActivity extends AppCompatActivity {
         buttonTekrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ResultActivity.this, EstimateActivity.class));
-                finish();
+               startActivity(new Intent(ResultActivity.this, EstimateActivity.class));
+               finish();
             }
         });
 

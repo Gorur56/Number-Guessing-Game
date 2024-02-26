@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonBasla.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, EstimateActivity.class));
             }
         });
