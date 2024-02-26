@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009688"
     tools:context=".ResultActivity">
 
     <ImageView
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:text="KAYBETTİNİZ...."
+        android:textColor="#FFEB3B"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,8 +38,10 @@
         android:layout_height="89dp"
         android:layout_marginBottom="90dp"
         android:text="Tekrar Oyna"
+        android:textColor="#FFEB3B"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:backgroundTint="#28782B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
