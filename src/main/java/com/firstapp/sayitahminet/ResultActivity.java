@@ -13,6 +13,8 @@ public class ResultActivity extends AppCompatActivity {
     private ImageView imageViewSonuc;
     private TextView textViewSonuc;
     private Button buttonTekrar;
+
+    private boolean sonuc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,18 @@ public class ResultActivity extends AppCompatActivity {
         textViewSonuc = findViewById(R.id.textViewSonuc);
         buttonTekrar = findViewById(R.id.buttonTekrar);
 
+        sonuc = getIntent().getBooleanExtra("sonuc",false);
+
+        if (sonuc)
+        {
+            textViewSonuc.setText("KAZANDINIZ...:)");
+            imageViewSonuc.setImageResource(R.drawable.mutlu_resim);
+        }
+        else
+        {
+            textViewSonuc.setText("KAYBETTİNİZ...:/");
+            imageViewSonuc.setImageResource(R.drawable.uzgun_resim);
+        }
         buttonTekrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
