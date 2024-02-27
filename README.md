@@ -20,6 +20,10 @@
 
 ###### ![image](https://github.com/Gorur56/Number-Guessing-Game/assets/54911292/ba5b9d30-c457-4224-972f-8501aa0ae1d0)
 
+###### 5. 1. Prediction made. And the remaining points in the game decreased to 4.
+
+###### ![image](https://github.com/Gorur56/Number-Guessing-Game/assets/54911292/18643175-6ec2-4e23-83c9-8a70d4c66e48)
+
 
 
 
