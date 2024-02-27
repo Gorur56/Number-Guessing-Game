@@ -8,18 +8,38 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button buttonBasla;
+    private Button buttonKolayy, buttonOrta, buttonZor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonBasla = findViewById(R.id.buttonBaslat);
+        buttonKolayy = findViewById(R.id.buttonKolayy);
+        buttonOrta = findViewById(R.id.buttonOrta);
+        buttonZor = findViewById(R.id.buttonZor);
 
-        buttonBasla.setOnClickListener(new View.OnClickListener() {
+        buttonKolayy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, EstimateActivity.class));
+                Intent i = new Intent(MainActivity.this, EstimateActivity.class);
+                i.putExtra("difficulty", "kolay");
+                startActivity(i);
+            }
+        });
+        buttonOrta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, EstimateActivity.class);
+                i.putExtra("difficulty","orta");
+                startActivity(i);
+            }
+        });
+        buttonZor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, EstimateActivity.class);
+                i.putExtra("difficulty","zor");
+                startActivity(i);
             }
         });
     }

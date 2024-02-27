@@ -32,10 +32,30 @@ public class EstimateActivity extends AppCompatActivity {
 
         buttonTahminnn = findViewById(R.id.buttonTahmin);
 
+        Intent intent = getIntent();
         Random r = new Random();
 
-        rastgeleSayi = r.nextInt(101);
-        Log.e("Rastgele SAyı: ", String.valueOf(rastgeleSayi));
+        if(intent != null && intent.hasExtra("difficulty"))
+        {
+            String difficulty = intent.getStringExtra("difficulty");
+
+            if (difficulty.equals("kolay"))
+            {
+                rastgeleSayi = r.nextInt(21);
+                editTextGirdi.setHint("1-20 arasında sayı giriniz.");
+            }
+            else if (difficulty.equals("orta"))
+            {
+                rastgeleSayi = r.nextInt(51);
+                editTextGirdi.setHint("1-50 arasında sayı giriniz.");
+            }
+            else
+            {
+                rastgeleSayi = r.nextInt(101);
+                editTextGirdi.setHint("1-100 arasında sayı giriniz.");
+            }
+        }
+        Log.e("Rastgele Sayı: ", String.valueOf(rastgeleSayi));
 
         buttonTahminnn.setOnClickListener(new View.OnClickListener() {
             @Override

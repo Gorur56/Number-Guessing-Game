@@ -2,10 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonKolay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E91E63"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="DuplicateIds">
 
     <TextView
         android:id="@+id/textView"
@@ -21,11 +23,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonBaslat"
-        android:layout_width="188dp"
-        android:layout_height="74dp"
+        android:id="@+id/buttonZor"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="60dp"
-        android:text="Oyuna Başla"
+        android:text="ZOR"
+        android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
         app:backgroundTint="#AF3131"
@@ -38,10 +41,41 @@
         android:id="@+id/imageView2"
         android:layout_width="201dp"
         android:layout_height="198dp"
-        android:layout_marginBottom="136dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBaslat"
+        android:layout_marginTop="53dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/zar_resim" />
+
+    <Button
+        android:id="@+id/buttonOrta"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="25dp"
+        android:text="ORTA"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#AF3131"
+        app:layout_constraintBottom_toTopOf="@+id/buttonZor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKolayy"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="33dp"
+        android:textColor="#070707"
+        android:text="KOLAY"
+        android:textSize="18sp"
+        app:backgroundTint="#AF3131"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOrta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
