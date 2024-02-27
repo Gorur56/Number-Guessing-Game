@@ -64,7 +64,6 @@ public class EstimateActivity extends AppCompatActivity {
         buttonTahminnn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Log.e("tahmin4: ", String.valueOf(editTextGirdi.getText().toString()));
                 sayac = sayac -1;
 
                 String entry = editTextGirdi.getText().toString();
@@ -74,7 +73,7 @@ public class EstimateActivity extends AppCompatActivity {
                     return;
                 }
 
-                int tahmin = Integer.parseInt(editTextGirdi.getText().toString());
+                int tahmin = Integer.parseInt(editTextGirdi.getText().toString()); //Eğer değer yoksa Null pointer hatası fırlatıyor.
 
                 Log.e("tahmin3: ", String.valueOf(tahmin));
 
@@ -107,7 +106,6 @@ public class EstimateActivity extends AppCompatActivity {
                     startActivity(i);
                     finish();
                 }
-
                 editTextGirdi.setText(""); //Tahmin ettğimiz sayı kalmasın
             }
         });
