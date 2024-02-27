@@ -16,5 +16,12 @@
    
 ###### ![image](https://github.com/Gorur56/Number-Guessing-Game/assets/54911292/f3004697-bf78-4253-a0f8-a928282f1488)
 
+###### 4. Button: If no value is entered in the edittext, it displays an error message.
+
+###### ![image](https://github.com/Gorur56/Number-Guessing-Game/assets/54911292/ba5b9d30-c457-4224-972f-8501aa0ae1d0)
+
+
+
+
 
 
