@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -31,6 +32,7 @@ public class EstimateActivity extends AppCompatActivity {
         editTextGirdi = findViewById(R.id.editTextGirdi);
 
         buttonTahminnn = findViewById(R.id.buttonTahmin);
+        Log.e("tahmin1: ", String.valueOf(buttonTahminnn));
 
         Intent intent = getIntent();
         Random r = new Random();
@@ -54,15 +56,28 @@ public class EstimateActivity extends AppCompatActivity {
                 rastgeleSayi = r.nextInt(101);
                 editTextGirdi.setHint("1-100 arasında sayı giriniz.");
             }
+
         }
         Log.e("Rastgele Sayı: ", String.valueOf(rastgeleSayi));
+        Log.e("tahmin2: ", String.valueOf(buttonTahminnn));
 
         buttonTahminnn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Log.e("tahmin4: ", String.valueOf(editTextGirdi.getText().toString()));
                 sayac = sayac -1;
 
+                String entry = editTextGirdi.getText().toString();
+                if (entry.isEmpty())
+                {
+                    Toast.makeText(getApplicationContext(), "Lütfen sayı giriniz!!!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 int tahmin = Integer.parseInt(editTextGirdi.getText().toString());
+
+                Log.e("tahmin3: ", String.valueOf(tahmin));
+
 
                 if ( tahmin == rastgeleSayi)
                 {
