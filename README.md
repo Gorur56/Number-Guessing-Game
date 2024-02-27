@@ -40,6 +40,11 @@
 
 ###### ![image](https://github.com/Gorur56/Number-Guessing-Game/assets/54911292/57aa7191-6356-45b4-b53b-c1c677b9fc11)
 
+###### 8. When we guess correctly, the following screen opens.
+
+###### ![image](https://github.com/Gorur56/Number-Guessing-Game/assets/54911292/8cc71c32-e64f-47f1-b1f3-e3a939e67546)
+
+
 
 
 
